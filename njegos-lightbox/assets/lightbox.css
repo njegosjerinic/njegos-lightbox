@@ -1,0 +1,28 @@
+#njegos-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 999999;
+  cursor: pointer;
+
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity 0.2s ease;
+}
+
+#njegos-lightbox.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#njegos-lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+}
