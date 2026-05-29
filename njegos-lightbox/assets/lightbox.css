@@ -14,6 +14,7 @@
   opacity: 0;
 
   transition: opacity 0.2s ease;
+  height: 100%;
 }
 
 #njegos-lightbox.active {
@@ -25,4 +26,33 @@
   max-width: 90%;
   max-height: 90%;
   object-fit: contain;
+}
+
+.leftArrow {
+  position: absolute;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  left: 0;
+}
+
+.rightArrow {
+  position: absolute;
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  right: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100%;
+}
+
+.lightbox-open {
+  overflow: hidden;
 }
